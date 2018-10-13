@@ -1,7 +1,11 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public class FastaParser
 {
+
     public static void main(String[] args) throws Exception
     {
         ArrayList<FastaSequence> fastaList = FastaSequence.readFastaFile("/Users/danielwright/JavaProjects/FastaParser/src/SampleSequence.txt");
@@ -11,5 +15,7 @@ public class FastaParser
             System.out.println(fs.getHeader());
             System.out.println(fs.getSequence());
         }
+
     }
+
 }

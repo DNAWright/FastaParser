@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6976b025-4d4b-4f72-ac11-c0ced7b20f18" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/FastaParser.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/FastaSequence.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/SampleSequence.txt" afterPath="$PROJECT_DIR$/src/SampleSequence.txt" />
+      <change beforePath="$PROJECT_DIR$/out/production/FastaParser/FastaSequence.class" afterPath="$PROJECT_DIR$/out/production/FastaParser/FastaSequence.class" />
+      <change beforePath="$PROJECT_DIR$/src/FastaParser.java" afterPath="$PROJECT_DIR$/src/FastaParser.java" />
+      <change beforePath="$PROJECT_DIR$/src/FastaSequence.java" afterPath="$PROJECT_DIR$/src/FastaSequence.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,18 +32,20 @@
       <file leaf-file-name="FastaSequence.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FastaSequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+            <state relative-caret-position="138">
+              <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-                <element signature="e#855#856#0" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#895#896#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/SampleSequence.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -62,9 +64,11 @@
       <file leaf-file-name="FastaParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FastaParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,8 +95,8 @@
       <list>
         <option value="$PROJECT_DIR$/fastaOutput.txt" />
         <option value="$PROJECT_DIR$/src/Parser.java" />
-        <option value="$PROJECT_DIR$/src/FastaParser.java" />
         <option value="$PROJECT_DIR$/src/SampleSequence.txt" />
+        <option value="$PROJECT_DIR$/src/FastaParser.java" />
         <option value="$PROJECT_DIR$/src/FastaSequence.java" />
       </list>
     </option>
@@ -304,12 +308,12 @@
       <updated>1537793884913</updated>
       <workItem from="1537793886483" duration="3668000" />
       <workItem from="1538382588022" duration="12061000" />
-      <workItem from="1539379082986" duration="6261000" />
+      <workItem from="1539379082986" duration="12752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21990000" />
+    <option name="totallyTimeSpent" value="28481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -414,36 +418,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FastaParser.java">
+    <entry file="file://$PROJECT_DIR$/src/SampleSequence.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="90">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SampleSequence.txt">
+    <entry file="file://$PROJECT_DIR$/src/FastaParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="10" column="72" lean-forward="false" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FastaSequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+        <state relative-caret-position="138">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#895#896#0" expanded="true" />
           </folding>
         </state>
       </provider>

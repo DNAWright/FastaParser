@@ -11,8 +11,8 @@ public class FastaSequence
 
     public FastaSequence(String name, String seq)
     {
-        this.setHeader(name);
-        this.setSequence(seq);
+        this.header = name;
+        this.sequence = seq;
     }
 
     public static float getGCRatio()
@@ -27,7 +27,6 @@ public class FastaSequence
 
     public static String getSequence()
     {
-
         return sequence;
     }
 
@@ -49,30 +48,28 @@ public class FastaSequence
 
     public static ArrayList<FastaSequence> readFastaFile(String filePath) throws Exception
     {
+        ArrayList<FastaSequence> sequenceList = new ArrayList<>();
         String sequence;
         String seqName;
         float ratio;
 
-        ArrayList<FastaSequence> fastaList = new ArrayList<>();
-        BufferedReader fastaReader = new BufferedReader(new FileReader(new File(filePath)));
+        BufferedReader fReader = new BufferedReader(new FileReader(new File(filePath)));
 
         String line;
         StringBuilder build = new StringBuilder();
 
-        while((line = fastaReader.readLine()) != null)
+        while((line = fReader.readLine()) != null)
         {
+            seqName = line.replace(">", "").trim();
 
-                seqName = line.replace(">", "").trim();
-                while((line = fastaReader.readLine()) != null && !line.startsWith(">"))
-                {
-                    build.append(line);
-                }
-                sequence = build.toString();
-                fastaList.add(new FastaSequence(seqName,sequence));
-
-            build.delete(0,build.length());
-            break;
+            while ((line = fReader.readLine()) != null && !line.startsWith(">"))
+            {
+                build.append(line);
+            }
+            sequence = build.toString();
+            sequenceList.add(new FastaSequence(seqName,sequence));
+            build.delete(0, build.length());
         }
-            return fastaList;
+        return sequenceList;
     }
 }
