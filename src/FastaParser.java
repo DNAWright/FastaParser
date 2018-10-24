@@ -14,6 +14,7 @@ public class FastaParser
         {
             System.out.println(fs.getHeader());
             System.out.println(fs.getSequence());
+            System.out.println(fs.getGCRatio());
         }
 
     }

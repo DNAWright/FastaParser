@@ -8,12 +8,12 @@ public class FastaSequence
 {
     private String header;
     private String sequence;
-    private float GCRatio;
+    private float gcRatio;
 
 
     public float getGCRatio()
     {
-        return GCRatio;
+        return gcRatio;
     }
 
     public String getSequence()
@@ -50,6 +50,15 @@ public class FastaSequence
             }
 
             fs1.sequence = build.toString().trim();
+            char aminoAcids[] = fs1.sequence.toCharArray();
+            float counter = 0;
+            for(char s : aminoAcids)
+            {
+                if (s == 'G' || s == 'C')
+                    counter++;
+            }
+
+            fs1.gcRatio = counter/aminoAcids.length;
             sequenceList.add(fs1);
 
         }
