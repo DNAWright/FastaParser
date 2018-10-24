@@ -1,75 +1,60 @@
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.List;
 import java.util.ArrayList;
 
 public class FastaSequence
 {
-    private static String header;
-    private static String sequence;
-    private static float GCRatio;
+    private String header;
+    private String sequence;
+    private float GCRatio;
 
-    public FastaSequence(String name, String seq)
-    {
-        this.header = name;
-        this.sequence = seq;
-    }
 
-    public static float getGCRatio()
+    public float getGCRatio()
     {
         return GCRatio;
     }
 
-    public static void setGCRatio(float GCRatio)
-    {
-        FastaSequence.GCRatio = GCRatio;
-    }
-
-    public static String getSequence()
+    public String getSequence()
     {
         return sequence;
     }
 
-    public static void setSequence(String sequence)
-    {
-        FastaSequence.sequence = sequence;
-    }
-
-    public static String getHeader()
+    public String getHeader()
     {
 
         return header;
     }
 
-    public static void setHeader(String header)
+    public static List<FastaSequence> readFastaFile(String filePath) throws Exception
     {
-        FastaSequence.header = header;
-    }
-
-    public static ArrayList<FastaSequence> readFastaFile(String filePath) throws Exception
-    {
-        ArrayList<FastaSequence> sequenceList = new ArrayList<>();
-        String sequence;
-        String seqName;
-        float ratio;
-
+        List<FastaSequence> sequenceList = new ArrayList<>();
         BufferedReader fReader = new BufferedReader(new FileReader(new File(filePath)));
+        String line = fReader.readLine();
 
-        String line;
-        StringBuilder build = new StringBuilder();
-
-        while((line = fReader.readLine()) != null)
+        while(line != null)
         {
-            seqName = line.replace(">", "").trim();
+            StringBuilder build = new StringBuilder();
+            FastaSequence fs1 = new FastaSequence();
+            if(line.startsWith(">"))
+            {
+                fs1.header = (line.replace(">", "").trim());
+                line = fReader.readLine();
+            }
 
-            while ((line = fReader.readLine()) != null && !line.startsWith(">"))
+            while(line != null && ! line.startsWith(">"))
             {
                 build.append(line);
+                line = fReader.readLine();
             }
-            sequence = build.toString();
-            sequenceList.add(new FastaSequence(seqName,sequence));
-            build.delete(0, build.length());
+
+            fs1.sequence = build.toString().trim();
+            sequenceList.add(fs1);
+
         }
+
+        fReader.close();
         return sequenceList;
     }
 }
